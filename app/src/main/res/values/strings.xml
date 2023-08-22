@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobilePortofolio</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="report">Report Every Month</string>
+</resources>
