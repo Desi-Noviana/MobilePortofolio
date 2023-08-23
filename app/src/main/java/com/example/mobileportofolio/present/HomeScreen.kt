@@ -48,6 +48,7 @@ import co.yml.charts.ui.piechart.models.PieChartConfig
 import co.yml.charts.ui.piechart.models.PieChartData
 import co.yml.charts.ui.piechart.utils.proportion
 import com.example.mobileportofolio.R
+import com.example.mobileportofolio.present.details.LinearChartApplication
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -77,20 +78,21 @@ fun HomeScreen(
                             SimpleDonutChart(context, navController)
                         }
                     }
-                    /*1 -> {
+                    1 -> {
                         Text(
                             modifier = Modifier.padding(12.dp),
                             text = stringResource(R.string.report),
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )
-                        SingleLineChartWithGridLines(
+                        LinearChartApplication()
+                        /*SingleLineChartWithGridLines(
                             DataUtils.getLineChartData(
                             12,
                             start = 1,
                             maxRange = 12
-                        ))
-                    }*/
+                        ))*/
+                    }
                 }
             }
         })
